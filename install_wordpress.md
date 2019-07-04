@@ -40,35 +40,35 @@ rm -R wordpress
 
 - index.php
 
-    ```shell
+```shell
 chmod -v 666 index.php
-    ```
+```
 
 - .htaccess
 
-    ```shell
+```shell
 touch .htaccess
-    ```
+```
 
-    ```shell
-    chmod -v 666 .htaccess
-    ```
+```shell
+chmod -v 666 .htaccess
+```
 
 - uploads
 
-    ```shell
+```shell
 cd /var/www/html/wp-content
-    ```
+```
 
-    ```
-    mkdir uploads
-    ```
+```
+mkdir uploads
+```
 
 - Give php permission to write to uploads folder
 
-    ```shell
+```shell
 chown -R www-data /var/www/html/wp-content/uploads
-    ```
+```
 
 ### Restart Apache
 
@@ -84,26 +84,26 @@ a2enmod rewrite
 
 - restart apache
 
-    ```shell
+```shell
 service apache2 restart
-    ```
+```
 
 - adjust virtual host configuration
 
-    ```shell
+```shell
 nano /etc/apache2/sites-available/000-default.conf
-    ```
+```
 
 - Enter the following below `Document Root /var/www/html`
 
-    ```html
+```html
 <Directory /var/www/html>
-	   Options Indexes FollowSymLinks MultiViews
-	   AllowOverride All
-	   Order allow,deny
-	   allow from all
+   Options Indexes FollowSymLinks MultiViews
+   AllowOverride All
+   Order allow,deny
+   allow from all
 </Directory>
-    ```
+```
 
 - Write Out `Ctrl + w`
 
@@ -111,6 +111,6 @@ nano /etc/apache2/sites-available/000-default.conf
 
 - Restart Apache
 
-    ```shell
+```shell
 service apache2 restart
-    ```
+```
