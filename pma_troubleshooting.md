@@ -34,7 +34,7 @@ ls -a
 ```shell
 wget http://browscap.org/stream?q=PHP_BrowsCapINI
 ```
-    - Rename the downloaded file
+  - Rename the downloaded file
 
 ```shell
 mv stream\?q\=PHP_BrowsCapINI php_browscap.ini
@@ -44,14 +44,14 @@ mv stream\?q\=PHP_BrowsCapINI php_browscap.ini
 ```shell
 nano /etc/php/(PHP_VERSION)/apache2/php.ini
 ```
-    - Search for `browscap` using `Ctrl + w`
-      - Remove the `;` before the `browscap =` text
-      - After the `browscap =` insert the following
+  - Search for `browscap` using `Ctrl + w`
+    - Remove the `;` before the `browscap =` text
+    - After the `browscap =` insert the following
 
 ```shell
 /etc/php/(PHP_VERSION)/mods-available/php_browscap.ini
 ```
-    - Restart Apache
+  - Restart Apache
 
 ```shell
 service apache2 restart

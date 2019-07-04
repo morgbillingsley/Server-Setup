@@ -82,13 +82,13 @@ service apache2 restart
 a2enmod rewrite
 ```
 
-- restart apache
+- Restart apache
 
 ```shell
 service apache2 restart
 ```
 
-- adjust virtual host configuration
+- Adjust virtual host configuration
 
 ```shell
 nano /etc/apache2/sites-available/000-default.conf
