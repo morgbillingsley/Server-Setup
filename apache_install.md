@@ -32,9 +32,9 @@ apt-get install mysql-server php(PHP_VERSION)-mysql php-pear
 
 - Configure MySQL
 
-  - ```shell
+```shell
 mysql_secure_installation
-  ```
+```
 
 - Select apache2
   - Select yes to dbconfig-common
@@ -50,15 +50,15 @@ service apache2 restart
 
 1. Edit apache2.conf file
 
-  - ```shell
+```shell
 edit /etc/apache2/apache2.conf
-   ```
+```
 
 2. At the end of the file insert the following text
 
-  - ```
+```
 Include /etc/phpmyadmin/apache.conf
-   ```
+```
 
 ### Restart Apache
 
@@ -74,6 +74,6 @@ apt-get install phpmyadmin
 
 - Check if phpmyadmin page is working in the browser
 
-  - ```
+```
 http://[SERVER_IP_ADDRESS]/phpmyadmin
-  ```
+```
