@@ -21,7 +21,7 @@ tar -xzvf latest.tar.gz
 - Delete the downloaded zip file
 
 ```shell
-rm -R latesr.tar.gz
+rm -R latest.tar.gz
 ```
 
 ### Move all files into apache root directory
