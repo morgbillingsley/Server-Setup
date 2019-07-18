@@ -5,9 +5,11 @@
 ```shell
 mysql -h [HOST] -u [USERNAME] -p
 ```
-### Type in your password after `Pasword: `
+### Type in your password after:
+`Pasword: `
 
-### The MySQL shell should appear like so `mysql> `
+### The MySQL shell should appear like so:
+`mysql> `
 
 ### To show all databases, type the following command:
 
