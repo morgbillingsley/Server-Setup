@@ -35,6 +35,12 @@ CREATE DATABASE [DB_NAME];
 CREATE USER '[USER_NAME]'@'[HOST]' IDENTIFIED BY '[PASSWORD]';
 ```
 
+### To view all users, type the following command:
+
+```sql
+SELECT User, Host, Password FROM mysql.user;
+```
+
 ### To grant a user access to a specific database, type the following command
 
 ```sql
@@ -66,6 +72,12 @@ GRANT ALL PRIVILEGES ON `my\_database`.* TO '[USER_NAME]'@'[HOST]';
 
 ```sql
 FLUSH PRIVILEGES;
+```
+
+### To view privileges of a given user, type the following command:
+
+```sql
+SHOW GRANTS FOR '[USER_NAME]'@'[HOST]';
 ```
 
 ### To revoke privileges from a user, type the following command:
